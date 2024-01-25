@@ -12,9 +12,9 @@ html {
   background: black;
 }
 
-html::-webkit-scrollbar {
+/* html::-webkit-scrollbar {
   display: none;
-}
+} */
 
 body {
   background-color: white;
