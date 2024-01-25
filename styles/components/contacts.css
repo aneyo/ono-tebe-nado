@@ -1,0 +1,20 @@
+.contact-info {
+  width: 240px;
+  grid-column: 3;
+  justify-self: end;
+}
+
+.contact-info > * {
+  display: block;
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.3px; /* 135% */
+  text-underline-offset: 4px;
+}
+
+.contact-info > .wide {
+  letter-spacing: 0.18px;
+}
