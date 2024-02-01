@@ -82,6 +82,7 @@
   flex: 1;
   margin: 165px 50px 0 50px;
   gap: 12px;
+  letter-spacing: 0.3em;
 }
 
 .jambotron > .title > span:nth-of-type(2) {
@@ -91,10 +92,6 @@
 .jambotron > .title > span:nth-of-type(3) {
   align-self: end;
   line-height: 1;
-}
-
-.content > .jambotron > .title {
-  letter-spacing: 0.3em;
 }
 
 .content > .jambotron > .title .title-spacing-fix {
