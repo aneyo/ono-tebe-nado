@@ -7,11 +7,11 @@
   align-items: center;
 }
 
-.header > .logo {
+.header-logo {
   grid-column: 2;
 }
 
-.header > .logo > img {
+.header-logo > img {
   width: 148px;
   height: 105px;
 }
@@ -22,13 +22,13 @@
   justify-content: space-between;
 }
 
-.footer > .socials-list > li > .social-icon.youtube {
+.social-icon.youtube {
   background-image: url(../images/yt.svg);
 }
-.footer > .socials-list > li > .social-icon.vk {
+.social-icon.vk {
   background-image: url(../images/vk.svg);
 }
-.footer > .socials-list > li > .social-icon.pinterest {
+.social-icon.pinterest {
   background-image: url(../images/pinterest.svg);
 }
 
@@ -38,7 +38,7 @@
   list-style: none;
 }
 
-.footer > .socials-list > li > .social-icon {
+.socials-list .social-icon {
   display: block;
   width: 48px;
   height: 48px;
@@ -50,14 +50,11 @@
 .content > .jambotron {
   display: flex;
   flex-direction: column;
-
   width: 100%;
   aspect-ratio: 1100/757;
-
   background-size: cover;
   background-position: center;
   background-image: url(../images/cover.jpg);
-
   position: relative;
 }
 
@@ -87,24 +84,24 @@
   gap: 12px;
 }
 
-.content > .jambotron > .title > span:nth-of-type(2) {
+.jambotron > .title > span:nth-of-type(2) {
   margin-left: 286px;
 }
 
-.content > .jambotron > .title > span:nth-of-type(3) {
+.jambotron > .title > span:nth-of-type(3) {
   align-self: end;
   line-height: 1;
 }
 
-.content > .jambotron > .title > span {
+.content > .jambotron > .title {
   letter-spacing: 0.3em;
 }
 
-.content > .jambotron > .title > span > .title-spacing-fix {
+.content > .jambotron > .title .title-spacing-fix {
   letter-spacing: 0.6em;
 }
 
-.content > .jambotron > .title > span > .title-spacing-fix-reset {
+.content > .jambotron > .title .title-spacing-fix-reset {
   letter-spacing: 0;
 }
 
@@ -209,7 +206,7 @@
   text-decoration: none;
 }
 
-.content > .lots-grid > .lot-card > .lot-card-content > .name {
+.lot-card > .lot-card-content > .name {
   color: #fff;
   font-size: 22px;
   font-style: normal;
@@ -219,7 +216,7 @@
   text-transform: uppercase;
 }
 
-.content > .lots-grid > .lot-card > .lot-card-content > .description {
+.lot-card > .lot-card-content > .description {
   color: #fff;
   font-size: 20px;
   font-style: normal;
@@ -250,7 +247,7 @@
   display: block;
   width: 148px;
   height: 114px;
-  background-image: url(../../images/logo-white.svg);
+  background-image: url(../images/logo-white.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -304,6 +301,10 @@
   list-style: none;
 }
 
+.nav-menu-item.menu-item-active > a {
+  text-decoration: none;
+}
+
 .nav-menu.inline-menu > .nav-menu-item:not(:first-child) {
   list-style: circle;
 }
@@ -322,4 +323,11 @@
   font-weight: 400;
   line-height: 24.3px;
   text-underline-offset: 4px;
+}
+
+.contacts-block > .address-data {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }
